@@ -11,7 +11,7 @@ terraform {
 }
 
 inputs = {
-  hosted_zone_domain  = "${get_env("CLUSTER_NAME")}.guideplatform.nl"
+  hosted_zone_domain  = "${get_env("CLUSTER_NAME")}.yourdomain.com"
   cluster_name        = get_env("CLUSTER_NAME")
   workload_account_id = get_env("AWS_ACCOUNT_ID")
   monitored_domains = {
